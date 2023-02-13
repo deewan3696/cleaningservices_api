@@ -4,7 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "",
+    "migrate": "npx sequelize-cli db:migrate",
+    "undo-migrate": "npx sequelize-cli db:migrate:undo:all"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deewan3696/cleaningservices_api.git"
   },
   "author": "Dayo",
   "license": "ISC",
@@ -23,3 +31,8 @@
     "sequelize-cli": "^6.6.0"
   }
 }
+
+
+
+
+
